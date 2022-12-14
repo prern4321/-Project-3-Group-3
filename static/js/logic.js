@@ -1,6 +1,8 @@
+import cord from '../../Untitled.ipynb.ipynb';
+
 // Creating the map object
 var myMap = L.map("map", {
-  center: [40.7, -73.95],
+  center: [51.37999725, -0.406042069],
   zoom: 11
 });
 
@@ -9,17 +11,17 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
-// Store the API query variables.
-// For docs, refer to https://dev.socrata.com/docs/queries/where.html.
-// And, refer to https://dev.socrata.com/foundry/data.cityofnewyork.us/erm2-nwe9.
-var baseURL = "https://data.cityofnewyork.us/resource/fhrw-4uyv.json?";
-var date = "$where=created_date between'2016-01-01T00:00:00' and '2017-01-01T00:00:00'";
-var complaint = "&complaint_type=Rodent";
-var limit = "&$limit=10000";
+for (let i = 0; i < cord.length; i++) {
+  let lat = cord[i][0];
+  let long = cord[i][1];
 
-// Assemble the API query URL.
-var url = baseURL + date + complaint + limit;
 
+  const _mar = L.marker(new L.LatLng(lat, long), {
+    icon: markerIcon
+  });
+
+
+  
 // Get the data with d3.
 d3.json(url).then(function(response) {
 
