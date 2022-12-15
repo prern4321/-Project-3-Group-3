@@ -1,4 +1,3 @@
-import cord from '../../Untitled.ipynb.ipynb';
 
 // Creating the map object
 var myMap = L.map("map", {
@@ -11,7 +10,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
-for (let i = 0; i < cord.length; i++) {
+const markerCluster = new MarkerClusterGroup();
+
+for (let i = 0; i < len(cord); i++)
+{ console.log(cord[i][0])
   let lat = cord[i][0];
   let long = cord[i][1];
 
@@ -19,32 +21,22 @@ for (let i = 0; i < cord.length; i++) {
   const _mar = L.marker(new L.LatLng(lat, long), {
     icon: markerIcon
   });
-
-
-  
-// Get the data with d3.
-d3.json(url).then(function(response) {
-
-  // Create a new marker cluster group.
-  var markers = L.markerClusterGroup();
-
-  // Loop through the data.
-  for (var i = 0; i < response.length; i++) {
-
-    // Set the data location property to a variable.
-    var location = response[i].location;
-
-    // Check for the location property.
-    if (location) {
-
-      // Add a new marker to the cluster group, and bind a popup.
-      markers.addLayer(L.marker([location.coordinates[1], location.coordinates[0]])
-        .bindPopup(response[i].descriptor));
-    }
-
+  _mar.bindPopup(city);
+  _mar.on('popupopen', function() {
+    console.log('open popup');
+  });
+  _mar.on('popupclose', function() {
+    console.log('close popup');
+  });
+  _mar.on('mouseout', function() {
+    console.log('close popup with mouseout');
+    myMap.closePopup();
+  });
+  console.log(myMap.getZoom());
+  if (myMap.getZoom() > 15 && myMap.hasLayer(_mar)) {
+    myMap.closePopup();
+    console.log('zoom > 15 close popup');
   }
-
-  // Add our marker cluster layer to the map.
-  myMap.addLayer(markers);
-
-});
+  markerCluster.addLayer(_mar);
+}
+myMap.addLayer(markerCluster);
