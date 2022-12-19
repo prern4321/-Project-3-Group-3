@@ -1,4 +1,6 @@
-CREATE TABLE HOSPITALS (
+DROP TABLE hospitals;
+
+CREATE TABLE hospitals (
 OrganisationID INT NOT NULL,
 OrganisationCode VARCHAR(30) NOT NULL,
 Sector VARCHAR(30) NOT NULL,
@@ -12,4 +14,6 @@ Postcode VARCHAR(30) NOT NULL,
 Latitude  FLOAT NOT NULL,       
 Longitude FLOAT NOT NULL
 );
-SELECT * FROM HOSPITALS ;
+
+SELECT * FROM hospitals ;
+
