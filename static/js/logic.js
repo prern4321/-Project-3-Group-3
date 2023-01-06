@@ -12,12 +12,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var markers =  L.markerClusterGroup();
 
+
+
 for (let i = 0; i < cord.length; i++){ 
   row = cord[i]
   let lat = row.latitude
   let long = row.longitude
+  let mar = L.marker([lat, long],{title: row.oname +' ,' + row.county + ', ' + row.city});
   
-  markers.addLayer(L.marker([lat, long]));
+  markers.addLayer(mar);
 }
 myMap.addLayer(markers);
 
