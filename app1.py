@@ -1,5 +1,6 @@
 from flask import Flask, request,render_template
 from sqlalchemy import create_engine, func
+from config import Password
 import pandas as pd
 
 app = Flask(__name__)
@@ -15,7 +16,6 @@ def home():
     host = "localhost"
     port = 5432
     database_name = "project3"
-    Password ="root"
     connection_string = f"{protocol}://{username}:{Password}@{host}:{port}/{database_name}"
     engine = create_engine(connection_string)  
     df = pd.read_sql("SELECT * FROM hospitals", con=engine)
@@ -23,14 +23,13 @@ def home():
     cord = [{"latitude": lat, "longitude": lon, "oname":oname,"county":county,"city":city} for lat, lon,oname,county,city in zip(df['latitude'], df['longitude'],df['organisationname'],df['county'],df['city']) ]
     return render_template("showmapt.html", cord=cord)
 
-@app.route("/showcountyplot") 
+@app.route("/showcountyplot")  # route to showcountyplot.html which links to showcc  for county plot visualization
 def showcountyplot():
     protocol = "postgresql"
     username = "postgres"
     host = "localhost"
     port = 5432
     database_name = "project3"
-    Password ="root"
     connection_string = f"{protocol}://{username}:{Password}@{host}:{port}/{database_name}"
     engine = create_engine(connection_string)  
     df = pd.read_sql("SELECT distinct county  FROM hospitals", con=engine)
@@ -39,14 +38,13 @@ def showcountyplot():
     return render_template("showcountyplot.html", cord=data)
 
 
-@app.route("/showcc", methods =["GET", "POST"])
+@app.route("/showcc", methods =["GET", "POST"]) # links to showgovc.html for county plot visual
 def showcc():
     protocol = "postgresql"
     username = "postgres"
     host = "localhost"
     port = 5432
     database_name = "project3"
-    Password ="root"
     connection_string = f"{protocol}://{username}:{Password}@{host}:{port}/{database_name}"
     engine = create_engine(connection_string)
     if request.method == "POST":
@@ -61,14 +59,13 @@ def showcc():
 		"dataPoints": data}]
     return render_template("spcc.html",county=county, cord=cord)
 
-@app.route("/showcounty")
+@app.route("/showcounty") # route to showcountyhtml which links to showgov route to create Sector Chart
 def showcounty():
     protocol = "postgresql"
     username = "postgres"
     host = "localhost"
     port = 5432
     database_name = "project3"
-    Password ="root"
     connection_string = f"{protocol}://{username}:{Password}@{host}:{port}/{database_name}"
     engine = create_engine(connection_string)  
     df = pd.read_sql("SELECT distinct county  FROM hospitals", con=engine)
@@ -76,14 +73,13 @@ def showcounty():
     data = [{"county":county} for county in zip(df['county'])]
     return render_template("showcounty.html", cord=data)
 
-@app.route("/showgov", methods =["GET", "POST"])
+@app.route("/showgov", methods =["GET", "POST"]) # links to showgovc.html to create pie chart  visual
 def showgov():
     protocol = "postgresql"
     username = "postgres"
     host = "localhost"
     port = 5432
     database_name = "project3"
-    Password ="root"
     connection_string = f"{protocol}://{username}:{Password}@{host}:{port}/{database_name}"
     engine = create_engine(connection_string)
     if request.method == "POST":
