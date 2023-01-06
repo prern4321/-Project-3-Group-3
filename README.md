@@ -1,4 +1,8 @@
-Group 3 – Project 3: (Project Title)
+ # Group 3 – Project 3: ![image](https://user-images.githubusercontent.com/111789352/211095843-ddb20a61-4b6f-4cd4-8f86-bb700448cd16.png)
+![hospitalporter](https://user-images.githubusercontent.com/111789352/211096550-e8240e64-0387-4f24-9062-15ba766e94fb.jpeg)
+
+
+
 
 # Contributors:
 
@@ -16,7 +20,23 @@ Group 3 – Project 3: (Project Title)
 
 
 # Data Set:
-Kaggle - Hospitals.csv (hospital id details, ie name, location, type etc)
+
+After conducting a thorough review of available data sets, we have identified and selected the following three datasets for further analysis:
+
+1.	NHS public data from the UK Government: https://www.data.gov.uk/dataset/73740ffe-cecb-4cba-afb9-51ea996187a1/nhs-england-nhs-choices-hospitals-patient-comments-and-ratings   
+2.	NHS Public Data from the UK Government: https://digital.nhs.uk/data-and-information/publications/statistical/hospital-admitted-patient-care-activity/2020-21#resources    
+3.	Hospital Data in England from Kaggle: https://www.kaggle.com/datasets/manchunhui/uk-hospitals
+
+Following our selection process, we have chosen to utilise the geospatial data of the UK NHS Hospital Database available on Kaggle. The dataset was downloaded in CSV format and subsequently cleaned and pre-processed for analytical and visualisation purposes.
+
+The Kaggle dataset was selected due to its relevance to the aims of our project, specifically the requirement for geospatial data to create interactive visualisations, such as a map displaying the locations of hospitals in England. The dataset closely fits these requirements and was therefore deemed the most suitable option.
+
+## Preview of Dataset
+
+<img width="942" alt="image" src="https://user-images.githubusercontent.com/111789352/211102360-a42af220-80a1-430a-b904-685c36db7927.png">
+
+
+While the dataset includes a large amount of information, our focus was on the hospital ID/name, location, and type (NHS/non-independent sector or Private/independent sector). These specific details were necessary for the purposes of our analysis.
 
 
 # Technology used:
