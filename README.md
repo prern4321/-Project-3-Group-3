@@ -33,7 +33,9 @@ The Kaggle dataset was selected due to its relevance to the aims of our project,
 
 ## Preview of Dataset
 
-<img width="942" alt="image" src="https://user-images.githubusercontent.com/111789352/211102360-a42af220-80a1-430a-b904-685c36db7927.png">
+[![Datasetpreview](https://user-images.githubusercontent.com/111789352/211102761-1359c402-7280-46a2-989f-ddffca7f219d.png)](https://www.kaggle.com/datasets/manchunhui/uk-hospitals)
+
+
 
 
 While the dataset includes a large amount of information, our focus was on the hospital ID/name, location, and type (NHS/non-independent sector or Private/independent sector). These specific details were necessary for the purposes of our analysis.
@@ -46,7 +48,8 @@ Flask, Javascript,HTML,CSS,Bootstrap, Pandas , Sqlalchemy,SQL
 
 # JS Library
 CanvasJS
-Chosen for its ability to create rich  interactive and easily animated  dashboards. Also for its portability across devices and ability to be supported by major browsers.
+
+After conducting a review of various JavaScript libraries, we evaluated both HighCharts and CanvasJS. After testing, we ultimately chose to proceed with CanvasJS as it effectively met the requirements of our project. Mainly for its ability to create rich interactive and easily animated dashboards. Also, for its portability across devices and ability to be supported by major browsers.
 
 
 
