@@ -40,6 +40,8 @@ The Kaggle dataset was selected due to its relevance to the aims of our project,
 
 While the dataset includes a large amount of information, our focus was on the hospital ID/name, location, and type (NHS/non-independent sector or Private/independent sector). These specific details were necessary for the purposes of our analysis.
 
+Aim of the project :
+To be able to locate the hospitals on the map , hospitals with the county and their type (private/nhs) across the counties. Our focus was primarily to  build our knowledge on getting the different technologies to work together to create interactive visualizations.
 
 # Technology used:
 Flask, Javascript,HTML,CSS,Bootstrap, Pandas , Sqlalchemy,SQL
@@ -47,7 +49,7 @@ Flask, Javascript,HTML,CSS,Bootstrap, Pandas , Sqlalchemy,SQL
 
 
 # JS Library
-CanvasJS
+CanvasJs
 
 After conducting a review of various JavaScript libraries, we evaluated both HighCharts and CanvasJS. After testing, we ultimately chose to proceed with CanvasJS as it effectively met the requirements of our project. Mainly for its ability to create rich interactive and easily animated dashboards. Also, for its portability across devices and ability to be supported by major browsers.
 
@@ -63,6 +65,16 @@ Sector Chart Visualization
 ![image](https://user-images.githubusercontent.com/112128775/210757844-1e5d7efe-b605-4b85-bb4c-8ed9163b778d.png)
 Map Plot Visualizaton 
 ![image](https://user-images.githubusercontent.com/112128775/211083897-27a9a467-0eb3-47b6-b508-be7227c0c877.png)
+
+Visualizations created  :
+
+![image](https://user-images.githubusercontent.com/112128775/211114964-6bde59a7-1972-4868-bbe5-54a3e49a62cb.png)
+2) Localised visualizaton of hospitals within a county and their location details using canvas.js
+
+![image](https://user-images.githubusercontent.com/112128775/211115030-0921b687-4113-44fa-b2b4-c39325f8abc6.png)
+3) Pie chart visualization of the spread of independant/private vs non independant/nhs hospitals within a county.
+
+![image](https://user-images.githubusercontent.com/112128775/211115050-a20f3a1f-4255-4173-889c-c0f5c5c2037d.png)
 
 
 # Contribution:
