@@ -59,8 +59,6 @@ To be able to locate the hospitals on the map , hospitals with the county and th
 
 
 
-# Accessing the Dashboard
-
 
 
 # Technology used:
@@ -75,6 +73,8 @@ To be able to locate the hospitals on the map , hospitals with the county and th
 
 
 # JS Library
+
+Leaflet.js,D3
 
 After conducting a review of various JavaScript libraries, we evaluated both HighCharts and CanvasJS.
 
@@ -111,7 +111,7 @@ The map includes dropdown menus, filters, and the ability to zoom in for greater
 
 2) Localised visualizaton of hospitals within a county and their location details using canvas.js
 ![image](https://user-images.githubusercontent.com/112128775/211115030-0921b687-4113-44fa-b2b4-c39325f8abc6.png)
-The visualisation includes a dropdown menu allowing the user to select a specific county, which must then be confirmed before being displayed.
+The visualisation includes a dropdown menu allowing the user to select a specific county, which must then be confirmed before being displayed. It also gives the names and locations of the hospitals in the county and animation is enabled so it changes according to the size of the page.
 
 3) Pie chart visualization of the spread of independant/private vs non independant/nhs hospitals within a county.
 ![image](https://user-images.githubusercontent.com/112128775/211115050-a20f3a1f-4255-4173-889c-c0f5c5c2037d.png)
@@ -123,7 +123,7 @@ All of the visualisations utilise the same data stored in the SQL database to pr
 # Contribution:
 ## Prerna Dutt
 
-Worked out the coding logic for Project: index page ,app.py, 2 visualizations using canvas lib and connecting it all to the index page. Worked out the mouse over on the map visual. Setting up the sequel database and pandas connection to it . Testing the final outputs. Map with flow logic on read me. Using CanvasJs.Assisting in the finalization of readme.
+Worked out the coding logic for Project: index page , app.py, 2 visualizations, showcountyplot and sector chart using various JS libraries and connecting it all to the index page. Worked out the mouse over on the map visuals. The Javascript and the CSS files Setting up the sequel database and pandas connection to it . Testing the final outputs. Map with flow logic on read me. Using CanvasJs.Assisting in the finalization of readme.
 
 
 
