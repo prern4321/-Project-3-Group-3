@@ -65,7 +65,7 @@ To be able to locate the hospitals on the map , hospitals with the county and th
 
 # Technology used:
 
--	**Python Flask API:** Utilised to automatically fetch data from the SQL database and render the template.
+-	**Python Flask API:** Utilised to automatically fetch data from the SQL database and render the template. Powering the dashboard.
 -	**JavaScript:** Used to plot the interactive charts.
 -	**SQL with Flask:** Utilised to import data from a CSV file obtained from Kaggle and store it in a newly created database.
 -	**HTML and CSS:** Utilised to create the web application, with HTML providing the structure and layout and CSS enhancing the appearance.
@@ -107,13 +107,17 @@ Please note the code was witten in chunks so it is easier to run and debug
 
 1) Interactive map of Public and Private hospital locations
 ![image](https://user-images.githubusercontent.com/112128775/211114964-6bde59a7-1972-4868-bbe5-54a3e49a62cb.png)
+The map includes dropdown menus, filters, and the ability to zoom in for greater detail.
 
 2) Localised visualizaton of hospitals within a county and their location details using canvas.js
 ![image](https://user-images.githubusercontent.com/112128775/211115030-0921b687-4113-44fa-b2b4-c39325f8abc6.png)
+The visualisation includes a dropdown menu allowing the user to select a specific county, which must then be confirmed before being displayed.
 
 3) Pie chart visualization of the spread of independant/private vs non independant/nhs hospitals within a county.
 ![image](https://user-images.githubusercontent.com/112128775/211115050-a20f3a1f-4255-4173-889c-c0f5c5c2037d.png)
+The visualisation includes a dropdown menu allowing the user to select a specific county, which must then be confirmed before being displayed.
 
+All of the visualisations utilise the same data stored in the SQL database to provide three unique views of the distribution of hospitals in England. These visualisations are housed on separate pages that are linked together to allow the user to view the data using various perspectives. The visualisations have been designed with ample spacing to improve the overall appearance and avoid cluttered presentation.
 
 
 # Contribution:
