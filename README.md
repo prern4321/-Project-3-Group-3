@@ -147,3 +147,5 @@ Worked out the coding logic for Project: index page , app.py, 2 visualizations, 
 After selecting the dataset as a team, we established the project timeline and I created a shared document to track progress. I contributed my JavaScript knowledge and researched various JS libraries for use in the project, initially focusing on HighCharts for visualisation. However, due to issues with code reliability, time constraints, and the ability of CanvasJS to create similar or superior visualisations, we decided to abandon the use of HighCharts and proceed with CanvasJS instead.
 
 We collaborated effectively as a team on various aspects of the project, including the presentation. I created a skeleton presentation and uploaded it as a shared document, allowing other team members to edit and contribute to various sections. In addition, I assisted in the finalisation of the README, ensuring that it met the necessary requirements and was presented in a professional manner.
+
+Razvan Radu : Suggesting the kaggle dataset, hospitals.csv and helping in the presentation.
