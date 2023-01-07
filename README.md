@@ -49,9 +49,17 @@ Flask, Javascript,HTML,CSS,Bootstrap, Pandas , Sqlalchemy,SQL
 
 
 # JS Library
-CanvasJs
 
-After conducting a review of various JavaScript libraries, we evaluated both HighCharts and CanvasJS. After testing, we ultimately chose to proceed with CanvasJS as it effectively met the requirements of our project. Mainly for its ability to create rich interactive and easily animated dashboards. Also, for its portability across devices and ability to be supported by major browsers.
+After conducting a review of various JavaScript libraries, we evaluated both HighCharts and CanvasJS.
+
+
+[![CanvasJS](https://user-images.githubusercontent.com/111789352/211121281-98d49e56-54fa-4259-8517-f14abe7f9472.png)](https://canvasjs.com/) </a> [![HighCharts](https://user-images.githubusercontent.com/111789352/211123880-60ea752f-ead2-4daf-9f8e-13258d774589.png)](https://www.highcharts.com/)
+
+
+
+
+After testing, we ultimately chose to proceed with CanvasJS as it effectively met the requirements of our project. Mainly for its ability to create rich interactive and easily animated dashboards. Also, for its portability across devices and ability to be supported by major browsers.
+
 
 
 
@@ -93,4 +101,8 @@ Visualizations created  :
 
 
 ## Salma Abdirahman
-(Insert individual contribution)
+
+After selecting the dataset as a team, we established the project timeline and I created a shared document to track progress. I contributed my JavaScript knowledge and researched various JS libraries for use in the project, initially focusing on HighCharts for visualisation. However, due to issues with code reliability, time constraints, and the ability of CanvasJS to create similar or superior visualisations, we decided to abandon the use of HighCharts and proceed with CanvasJS instead.
+
+We collaborated effectively as a team on various aspects of the project, including the presentation. I created a skeleton presentation and uploaded it as a shared document, allowing other team members to edit and contribute to various sections. In addition, I assisted in the finalisation of the README, ensuring that it met the necessary requirements and was presented in a professional manner.
+
