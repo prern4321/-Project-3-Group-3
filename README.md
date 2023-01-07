@@ -59,6 +59,10 @@ To be able to locate the hospitals on the map , hospitals with the county and th
 
 
 
+# Accessing the Dashboard
+
+
+
 # Technology used:
 
 -	**Python Flask API:** Utilised to automatically fetch data from the SQL database and render the template.
