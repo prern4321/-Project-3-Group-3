@@ -122,7 +122,10 @@ All of the visualisations utilise the same data stored in the SQL database to pr
 
 # Contribution:
 ## Prerna Dutt
-(Insert individual contribution)
+
+Worked out the coding logic for Project: index page ,app.py, 2 visualizations using canvas lib and connecting it all to the index page. Worked out the mouse over on the map visual. Setting up the sequel database and pandas connection to it . Testing the final outputs. Map with flow logic on read me. Using CanvasJs.Assisting in the finalization of readme.
+
+
 
 
 
@@ -136,8 +139,6 @@ All of the visualisations utilise the same data stored in the SQL database to pr
 
 
 
-## Razvan Radu
-(Insert individual contribution)
 
 
 
