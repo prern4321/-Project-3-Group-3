@@ -19,7 +19,7 @@
 
 # Description of Project:
 
-##	Why did we choose the project?
+##	Why did we choose the project? (Our motivation)
 
 The COVID-19 pandemic has brought to the forefront the numerous challenges faced by the healthcare industry, including increased demand and resource constraints. In light of these issues, we were motivated to investigate the availability and quality of healthcare, specifically in the National Health Service (NHS). Our goal was to select a topic that aligned with this focus.
 
@@ -59,8 +59,6 @@ To be able to locate the hospitals on the map , hospitals with the county and th
 
 
 
-
-
 # Technology used:
 
 -	**Python Flask API:** Utilised to automatically fetch data from the SQL database and render the template. Powering the dashboard.
@@ -74,7 +72,6 @@ To be able to locate the hospitals on the map , hospitals with the county and th
 
 # JS Library
 
-Leaflet.js,D3
 
 After conducting a review of various JavaScript libraries, we evaluated both HighCharts and CanvasJS.
 
@@ -84,7 +81,9 @@ After conducting a review of various JavaScript libraries, we evaluated both Hig
 
 After testing, we ultimately chose to proceed with CanvasJS as it effectively met the requirements of our project. Mainly for its ability to create rich interactive and easily animated dashboards. Also, for its portability across devices and ability to be supported by major browsers.
 
+[![Leaflet.js](https://user-images.githubusercontent.com/111789352/211177445-10e90b0e-7bcf-4b5a-bc78-7bd5ff7ba3b8.png)](https://leafletjs.com/) </a> [![D3](https://user-images.githubusercontent.com/111789352/211177434-3988233a-1159-421f-bff9-de2a2e71e149.png)](https://d3js.org/)
 
+We also used Leaflet.js and D3 in the creation of the visualisations.
 
 # Coding logic 
 
@@ -121,10 +120,10 @@ All of the visualisations utilise the same data stored in the SQL database to pr
 
 
 # Contribution:
+
 ## Prerna Dutt
 
 Worked out the coding logic for Project: index page , app.py, 2 visualizations, showcountyplot and sector chart using various JS libraries and connecting it all to the index page. Worked out the mouse over on the map visuals. The Javascript and the CSS files Setting up the sequel database and pandas connection to it . Testing the final outputs. Map with flow logic on read me. Using CanvasJs.Assisting in the finalization of readme.
-
 
 
 
@@ -140,12 +139,12 @@ Worked out the coding logic for Project: index page , app.py, 2 visualizations, 
 
 
 
-
-
 ## Salma Abdirahman
 
 After selecting the dataset as a team, we established the project timeline and I created a shared document to track progress. I contributed my JavaScript knowledge and researched various JS libraries for use in the project, initially focusing on HighCharts for visualisation. However, due to issues with code reliability, time constraints, and the ability of CanvasJS to create similar or superior visualisations, we decided to abandon the use of HighCharts and proceed with CanvasJS instead.
 
 We collaborated effectively as a team on various aspects of the project, including the presentation. I created a skeleton presentation and uploaded it as a shared document, allowing other team members to edit and contribute to various sections. In addition, I assisted in the finalisation of the README, ensuring that it met the necessary requirements and was presented in a professional manner.
 
-Razvan Radu : Suggesting the kaggle dataset, hospitals.csv and helping in the presentation.
+## Razvan Radu
+
+I was responsible for researching and identifying potential datasets for our project. After reviewing various websites, I recommended the use of the Kaggle dataset, which was ultimately implemented. Additionally, I assisted in the data cleaning process for the hospitals.csv file and provided support during the creation of HighCharts visualisations, which were ultimately not utilised. I also contributed to the development of the presentation materials.
