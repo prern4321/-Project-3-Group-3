@@ -123,7 +123,7 @@ All of the visualisations utilise the same data stored in the SQL database to pr
 
 ## Prerna Dutt
 
-Worked out the coding logic for Project: index page , app.py, 2 visualizations, showcountyplot and sector chart using various JS libraries and connecting it all to the index page. Worked out the mouse over on the map visuals. The Javascript and the CSS files Setting up the sequel database and pandas connection to it . Testing the final outputs. Map with flow logic on read me. Using CanvasJs.Assisting in the finalization of readme.
+Worked out the coding logic for Project: index page , app.py, 2 visualizations, showcountyplot and sector chart using various JS libraries and connecting it all to the index page.  The coding of the index page and connection to CSS style and boostrap elements , the toggling of the index page ,the java script files. Worked out the mouse over on the map visuals. Setting up the sequel database and pandas connection to it . Testing the final outputs. Map with flow logic on read me. Using CanvasJs. Assisting in the finalization of readme.
 
 
 
@@ -147,4 +147,4 @@ We collaborated effectively as a team on various aspects of the project, includi
 
 ## Razvan Radu
 
-I was responsible for researching and identifying potential datasets for our project. After reviewing various websites, I recommended the use of the Kaggle dataset, which was ultimately implemented. Additionally, I assisted in the data cleaning process for the hospitals.csv file and provided support during the creation of HighCharts visualisations, which were ultimately not utilised. I also contributed to the development of the presentation materials.
+I was responsible for researching and identifying potential datasets for our project. After reviewing various websites, I recommended the use of the Kaggle dataset, which was ultimately implemented. Additionally, I assisted in the data cleaning process for the hospitals.csv file and was trying to produce visualizations using high charts. I also contributed to the development of the presentation materials.
