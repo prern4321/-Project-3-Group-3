@@ -134,10 +134,12 @@ Worked out the coding logic for Project: index page , app.py, 2 visualizations, 
 
 
 ## Rahmi Rahmiev
-(Insert individual contribution)
 
-
-
+* Selected the dataset
+* Data cleaning
+* Assisting with CSS and JavaScript for the front page
+* Visualizations - created Marker Cluster map with Leaflet and integrated it into front page
+* Assisted with creating the power point presentation and the GitHub ReadMe
 
 ## Salma Abdirahman
 
